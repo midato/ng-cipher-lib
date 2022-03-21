@@ -15,8 +15,15 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-builders/custom-webpack:browser",
           "options": {
+            "allowedCommonJsDependencies": ["crypto"],
+            "customWebpackConfig": {
+              "path": "./custom-webpack.config.js",
+              "mergeRules": {
+                "externals": "replace"
+              }
+            },
             "outputPath": "dist/ng-cipher-lib",
             "index": "src/index.html",
             "main": "src/main.ts",
