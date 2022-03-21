@@ -19,7 +19,7 @@ export class AppComponent implements OnInit {
       let aesK = "Do3VJxoVc9QBzMpk6/Vhh7xH0pqd+784Sva9BjNR6YY=";
       const hmacK = "m0sfw6fhuU8vhvJoxZ0r6ZWFZmp26kRh97eihPJntfI=";
       const dec = await this.cryptoService.decryptAes(value, aesK, hmacK);
-      // console.log(dec);
+      console.log(dec);
 
       value = "pruebas_pld@yopmail.com";
       aesK = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA45SIe9RDkgr7vCGPF4dY\nFrF8vZdJv44Puh7AXjaj2OQXUcm8eOFrar0w1rrEZMRB+pO1+QKGubERSgunw5YD\nYPOyG5t8tZepawxnQIXSQU7oEsqzTFShSjs5K6HoLafwwDxi6KD0pGWbOH8NvX3Q\nfjn4P8pHpiAn4ZOflbzG2BeJmzvlwrZRDHqGK/IXiDEsJn1AOob9QIkdTHfHgmU1\n95DjMXxfl4ZQDIV51qaIRHoWa2mXgxiO1GVD+t7/tNOmsQy2rJ3BaZi4p/eDkfX9\ndU1wsQTWn9ZHzmiIZaKu3vdFLg1wwVLlSsKxUuGLSLad2QE4wYtsBBD/OmhdNQi9\njQIDAQAB";
